@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+
+    /* background-image: url("../img/Desktop.png");
+    background-size: 100%; */
+}
+
+header {
+    width: 100%;
+    height: 74px;
+    margin: 0;
+}
+
+.nav-box {
+    display: flex;
+    width: 940px;
+    height: 100%;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+
+}
+
+
+
+.link-text {
+    font-family: Oxygen;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 166.667% */
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+    padding: 10px 20px;
+}
+
+header .link-text {
+    color: #2E2E2E;
+}
+
+.header-box  {
+    margin-top: 82px;
+    margin-bottom: 113px;
+}
+
+.header-text {
+    color: #2E2E2E;
+    text-align: center;
+    font-family: Lora;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 51px; /* 102% */
+    letter-spacing: 2px;
+
+    margin: 0;
+
+    
+}
+
+.header-subtitle {
+    color: #2E2E2EA1;
+    text-align: center;
+    font-family: Oxygen;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 117.647% */
+
+    margin-top: 20px;
+}
+
+.img {
+    width: 100%;
+    height: 534px;
+
+    background-image: url("../img/mountains.jpg");
+    background-size: 100%;
+    background-position-y: center; 
+
+ 
+}
+
+.text-box {
+    margin: 140px auto 135px;
+    width: 960px;
+}
+
+.text {
+    color: #101315;
+    font-family: Oxygen;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px; /* 145.833% */
+    margin: 35px 0;
+}
+
+footer {
+    margin-top: 135px;
+    height: 89px;
+
+    background-image: linear-gradient(#232F3899, #232F3899), url("../img/footer.png");
+    background-size: 100%;
+    background-position-y: center;
+    
+    
+    
+}
+
+footer .link-text {
+    color: #FFFFFF99;
+}
