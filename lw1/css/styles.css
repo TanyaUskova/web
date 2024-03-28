@@ -78,3 +78,41 @@ footer {
 footer .link-text {
     color: #FFFFFF99;
 }
+
+.bio-title {
+    margin: 113px auto 0px;
+    
+}
+
+.bio-title__text {
+    color: #2E2E2E;
+    text-align: center;
+    font: normal 500 40px/51px Lora, sans;  
+    clear: left;   
+}
+
+.bio-info {
+    margin: 50px 240px;
+    width: 875px;
+    height: 354px;
+}
+
+.bio-info__img {
+    float: left;
+    margin-right: 50px;
+
+}
+
+.bio-info__text {
+    display: inline;
+    color: #101315;
+    font: normal 400 24px/35px Oxygen, sans-serif;
+}
+
+.bio-info__list {
+    margin-left: 510px;
+}
+
+
+
+
