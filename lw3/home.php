@@ -1,3 +1,27 @@
+<?php
+$posts = [
+    [
+        'title' => 'The Road Ahead',
+        'subtitle' => 'The road ahead might be paved - it might not be.',
+        'img_modifier' => '/static/images/the_road_ahead.jpg',
+        'author_name' => 'Mat Vogels',
+        'author_photo' => '/static/images/mat_vogels.jpg',
+        'date' => 'September 25, 2015',
+    ],
+    [
+        'title' => 'From Top Down',
+        'subtitle' => 'Once a year, go someplace you’ve never been before.',
+        'img_modifier' => '/static/images/from_top_down.jpg',
+        'author_name' => 'William Wong',
+        'author_photo' => '/static/images/william_wong.jpg',
+        'date' => 'September 25, 2015',
+        'tag' => 'Adventure',
+    ]
+
+
+];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -60,12 +84,18 @@
             <h3 class="featured__title">Featured Posts</h3>
             <div class="line"></div>
             <div class="featured-posts container">
-                <div class="featured-post" style="background-image: url(/static/images/the_road_ahead.jpg)">
+                <?php
+                    foreach ($posts as $post) {
+                        include 'post_preview.php';
+                    }
+                ?>
+                <!-- <div class="featured-post" style="background-image: url(/static/images/the_road_ahead.jpg)">
                     <p class="featured-post__title">The Road Ahead</p>
                     <p class="featured-post__subtitle">The road ahead might be paved - it might not be.</p>
                     <div class="featured-post__info">
                         <div class="featured-post__speaker">
-                            <img class="featured-post__speaker-avatar" src="/static/images/mat_vogels.jpg" alt="Mat Vogels">
+                            <img class="featured-post__speaker-avatar" src="/static/images/mat_vogels.jpg"
+                                alt="Mat Vogels">
                             <span class="featured-post__speaker-name">Mat Vogels</span>
                         </div>
                         <span class="featured-post__date">September 25, 2015</span>
@@ -77,20 +107,24 @@
                     <h5 class="featured-post__subtitle">Once a year, go someplace you’ve never been before.</h5>
                     <div class="featured-post__info">
                         <div class="featured-post__speaker">
-                            <img class="featured-post__speaker-avatar" src="/static/images/william_wong.jpg" alt="William Wong">
+                            <img class="featured-post__speaker-avatar" src="/static/images/william_wong.jpg"
+                                alt="William Wong">
                             <span class="featured-post__speaker-name">William Wong</span>
                         </div>
                         <span class="featured-post__date">September 25, 2015</span>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
         <section class="recent">
             <h3 class="recent__title">Most Recent</h3>
             <div class="line"></div>
             <div class="recent-posts">
+                
+
                 <div class="recent-post">
-                    <div class="recent-post__img" style="background-image: url(/static/images/still_standing.jpg)"></div>
+                    <div class="recent-post__img" style="background-image: url(/static/images/still_standing.jpg)">
+                    </div>
                     <div class="recent-post__name">
                         <h4 class="recent-post__title">Still Standing Tall</h4>
                         <h5 class="recent-post__subtitle">Life begins at the end of your comfort zone.</h5>
@@ -98,7 +132,8 @@
                     <div class="recent-post__line"></div>
                     <div class="recent-post__info">
                         <div class="recent-post__speaker">
-                            <img class="recent-post__speaker-avatar" src="/static/images/william_wong.jpg" alt="William Wong">
+                            <img class="recent-post__speaker-avatar" src="/static/images/william_wong.jpg"
+                                alt="William Wong">
                             <span class="recent-post__speaker-name">William Wong</span>
                         </div>
                         <span class="recent-post__date">9/25/2015</span>
@@ -114,7 +149,8 @@
                     <div class="recent-post__line"></div>
                     <div class="recent-post__info">
                         <div class="recent-post__speaker">
-                            <img class="recent-post__speaker-avatar" src="/static/images/mat_vogels.jpg" alt="William Wong">
+                            <img class="recent-post__speaker-avatar" src="/static/images/mat_vogels.jpg"
+                                alt="William Wong">
                             <span class="recent-post__speaker-name">Mat Vogels</span>
                         </div>
                         <span class="recent-post__date">9/25/2015</span>
@@ -130,14 +166,16 @@
                     <div class="recent-post__line"></div>
                     <div class="recent-post__info">
                         <div class="recent-post__speaker">
-                            <img class="recent-post__speaker-avatar" src="/static/images/mat_vogels.jpg" alt="William Wong">
+                            <img class="recent-post__speaker-avatar" src="/static/images/mat_vogels.jpg"
+                                alt="William Wong">
                             <span class="recent-post__speaker-name">Mat Vogels</span>
                         </div>
                         <span class="recent-post__date">9/25/2015</span>
                     </div>
                 </div>
                 <div class="recent-post">
-                    <div class="recent-post__img" style="background-image: url(/static/images/through_the_mist.jpg)"></div>
+                    <div class="recent-post__img" style="background-image: url(/static/images/through_the_mist.jpg)">
+                    </div>
                     <div class="recent-post__name">
                         <h4 class="recent-post__title">Through the Mist</h4>
                         <h5 class="recent-post__subtitle">Travel makes you see what a tiny place you occupy in the
@@ -146,7 +184,8 @@
                     <div class="recent-post__line"></div>
                     <div class="recent-post__info">
                         <div class="recent-post__speaker">
-                            <img class="recent-post__speaker-avatar" src="/static/images/william_wong.jpg" alt="William Wong">
+                            <img class="recent-post__speaker-avatar" src="/static/images/william_wong.jpg"
+                                alt="William Wong">
                             <span class="recent-post__speaker-name">William Wong</span>
                         </div>
                         <span class="recent-post__date">9/25/2015</span>
@@ -162,7 +201,8 @@
                     <div class="recent-post__info">
 
                         <div class="recent-post__speaker">
-                            <img class="recent-post__speaker-avatar" src="/static/images/mat_vogels.jpg" alt="William Wong">
+                            <img class="recent-post__speaker-avatar" src="/static/images/mat_vogels.jpg"
+                                alt="William Wong">
                             <span class="recent-post__speaker-name">Mat Vogels</span>
                         </div>
                         <span class="recent-post__date">9/25/2015</span>
@@ -178,7 +218,8 @@
                     <div class="recent-post__line"></div>
                     <div class="recent-post__info">
                         <div class="recent-post__speaker">
-                            <img class="recent-post__speaker-avatar" src="/static/images    /william_wong.jpg" alt="William Wong">
+                            <img class="recent-post__speaker-avatar" src="/static/images    /william_wong.jpg"
+                                alt="William Wong">
                             <span class="recent-post__speaker-name">William Wong</span>
                         </div>
                         <span class="recent-post__date">9/25/2015</span>
