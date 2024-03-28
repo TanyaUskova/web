@@ -17,10 +17,59 @@ $posts = [
         'date' => 'September 25, 2015',
         'tag' => 'Adventure',
     ]
-
-
 ];
-?>
+
+$recent_posts = [
+    [
+        'title' => 'Still Standing Tall',
+        'subtitle' => 'Life begins at the end of your comfort zone.',
+        'img_modifier' => '/static/images/still_standing.jpg',
+        'author_name' => 'William Wong',
+        'author_photo' => '/static/images/william_wong.jpg',
+        'date' => '9/25/2015',
+    ],
+    [
+        'title' => 'Sunny Side Up',
+        'subtitle' => 'No place is ever as bad as they tell you it’s going to be.',
+        'img_modifier' => '/static/images/sunny_side_up.jpg',
+        'author_name' => 'Mat Vogels',
+        'author_photo' => '/static/images/mat_vogels.jpg',
+        'date' => '9/25/2015',
+    ],
+    [
+        'title' => 'Water Falls',
+        'subtitle' => 'We travel not to escape life, but for life not to escape us.',
+        'img_modifier' => '/static/images/water_falls.jpg',
+        'author_name' => 'Mat Vogels',
+        'author_photo' => '/static/images/mat_vogels.jpg',
+        'date' => '9/25/2015',
+    ],
+    [
+        'title' => 'Through the Mist',
+        'subtitle' => 'Travel makes you see what a tiny place you occupy in the world.',
+        'img_modifier' => '/static/images/through_the_mist.jpg',
+        'author_name' => 'William Wong',
+        'author_photo' => '/static/images/william_wong.jpg',
+        'date' => '9/25/2015',
+    ],
+    [
+        'title' => 'Awaken Early',
+        'subtitle' => 'Not all those who wander are lost.',
+        'img_modifier' => '/static/images/awaken_early.jpg',
+        'author_name' => 'Mat Vogels',
+        'author_photo' => '/static/images/mat_vogels.jpg',
+        'date' => '9/25/2015',
+    ],
+    [
+        'title' => 'Try it Always',
+        'subtitle' => 'The world is a book, and those who do not travel read only one page.',
+        'img_modifier' => '/static/images/try_it_always.jpg',
+        'author_name' => 'William Wong',
+        'author_photo' => '/static/images/william_wong.jpg',
+        'date' => '9/25/2015',
+    ]
+]
+    ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -85,146 +134,21 @@ $posts = [
             <div class="line"></div>
             <div class="featured-posts container">
                 <?php
-                    foreach ($posts as $post) {
-                        include 'post_preview.php';
-                    }
+                foreach ($posts as $post) {
+                    include 'post_preview.php';
+                }
                 ?>
-                <!-- <div class="featured-post" style="background-image: url(/static/images/the_road_ahead.jpg)">
-                    <p class="featured-post__title">The Road Ahead</p>
-                    <p class="featured-post__subtitle">The road ahead might be paved - it might not be.</p>
-                    <div class="featured-post__info">
-                        <div class="featured-post__speaker">
-                            <img class="featured-post__speaker-avatar" src="/static/images/mat_vogels.jpg"
-                                alt="Mat Vogels">
-                            <span class="featured-post__speaker-name">Mat Vogels</span>
-                        </div>
-                        <span class="featured-post__date">September 25, 2015</span>
-                    </div>
-                </div>
-                <div class="featured-post" style="background-image: url(/static/images/from_top_down.jpg)">
-                    <span class="featured-post__tag">ADVENTURE</span>
-                    <h4 class="featured-post__title">From Top Down</h4>
-                    <h5 class="featured-post__subtitle">Once a year, go someplace you’ve never been before.</h5>
-                    <div class="featured-post__info">
-                        <div class="featured-post__speaker">
-                            <img class="featured-post__speaker-avatar" src="/static/images/william_wong.jpg"
-                                alt="William Wong">
-                            <span class="featured-post__speaker-name">William Wong</span>
-                        </div>
-                        <span class="featured-post__date">September 25, 2015</span>
-                    </div>
-                </div> -->
             </div>
         </section>
         <section class="recent">
             <h3 class="recent__title">Most Recent</h3>
             <div class="line"></div>
             <div class="recent-posts">
-                
-
-                <div class="recent-post">
-                    <div class="recent-post__img" style="background-image: url(/static/images/still_standing.jpg)">
-                    </div>
-                    <div class="recent-post__name">
-                        <h4 class="recent-post__title">Still Standing Tall</h4>
-                        <h5 class="recent-post__subtitle">Life begins at the end of your comfort zone.</h5>
-                    </div>
-                    <div class="recent-post__line"></div>
-                    <div class="recent-post__info">
-                        <div class="recent-post__speaker">
-                            <img class="recent-post__speaker-avatar" src="/static/images/william_wong.jpg"
-                                alt="William Wong">
-                            <span class="recent-post__speaker-name">William Wong</span>
-                        </div>
-                        <span class="recent-post__date">9/25/2015</span>
-                    </div>
-                </div>
-                <div class="recent-post">
-                    <div class="recent-post__img" style="background-image: url(/static/images/sunny_side_up.jpg)"></div>
-                    <div class="recent-post__name">
-                        <h4 class="recent-post__title">Sunny Side Up</h4>
-                        <h5 class="recent-post__subtitle">No place is ever as bad as they tell you it’s going to be.
-                        </h5>
-                    </div>
-                    <div class="recent-post__line"></div>
-                    <div class="recent-post__info">
-                        <div class="recent-post__speaker">
-                            <img class="recent-post__speaker-avatar" src="/static/images/mat_vogels.jpg"
-                                alt="William Wong">
-                            <span class="recent-post__speaker-name">Mat Vogels</span>
-                        </div>
-                        <span class="recent-post__date">9/25/2015</span>
-                    </div>
-                </div>
-                <div class="recent-post">
-                    <div class="recent-post__img" style="background-image: url(/static/images/water_falls.jpg)"></div>
-                    <div class="recent-post__name">
-                        <h4 class="recent-post__title">Water Falls</h4>
-                        <h5 class="recent-post__subtitle">We travel not to escape life, but for life not to escape us.
-                        </h5>
-                    </div>
-                    <div class="recent-post__line"></div>
-                    <div class="recent-post__info">
-                        <div class="recent-post__speaker">
-                            <img class="recent-post__speaker-avatar" src="/static/images/mat_vogels.jpg"
-                                alt="William Wong">
-                            <span class="recent-post__speaker-name">Mat Vogels</span>
-                        </div>
-                        <span class="recent-post__date">9/25/2015</span>
-                    </div>
-                </div>
-                <div class="recent-post">
-                    <div class="recent-post__img" style="background-image: url(/static/images/through_the_mist.jpg)">
-                    </div>
-                    <div class="recent-post__name">
-                        <h4 class="recent-post__title">Through the Mist</h4>
-                        <h5 class="recent-post__subtitle">Travel makes you see what a tiny place you occupy in the
-                            world.</h5>
-                    </div>
-                    <div class="recent-post__line"></div>
-                    <div class="recent-post__info">
-                        <div class="recent-post__speaker">
-                            <img class="recent-post__speaker-avatar" src="/static/images/william_wong.jpg"
-                                alt="William Wong">
-                            <span class="recent-post__speaker-name">William Wong</span>
-                        </div>
-                        <span class="recent-post__date">9/25/2015</span>
-                    </div>
-                </div>
-                <div class="recent-post">
-                    <div class="recent-post__img" style="background-image: url(/static/images/awaken_early.jpg)"></div>
-                    <div class="recent-post__name">
-                        <h4 class="recent-post__title">Awaken Early</h4>
-                        <h5 class="recent-post__subtitle">Not all those who wander are lost.</h5>
-                    </div>
-                    <div class="recent-post__line"></div>
-                    <div class="recent-post__info">
-
-                        <div class="recent-post__speaker">
-                            <img class="recent-post__speaker-avatar" src="/static/images/mat_vogels.jpg"
-                                alt="William Wong">
-                            <span class="recent-post__speaker-name">Mat Vogels</span>
-                        </div>
-                        <span class="recent-post__date">9/25/2015</span>
-                    </div>
-                </div>
-                <div class="recent-post">
-                    <div class="recent-post__img" style="background-image: url(/static/images/try_it_always.jpg)"></div>
-                    <div class="recent-post__name">
-                        <h4 class="recent-post__title">Try it Always</h4>
-                        <h5 class="recent-post__subtitle">The world is a book, and those who do not travel read only one
-                            page.</h5>
-                    </div>
-                    <div class="recent-post__line"></div>
-                    <div class="recent-post__info">
-                        <div class="recent-post__speaker">
-                            <img class="recent-post__speaker-avatar" src="/static/images    /william_wong.jpg"
-                                alt="William Wong">
-                            <span class="recent-post__speaker-name">William Wong</span>
-                        </div>
-                        <span class="recent-post__date">9/25/2015</span>
-                    </div>
-                </div>
+                <?php
+                foreach ($recent_posts as $post) {
+                    include 'recent-post_preview.php';
+                }
+                ?>
             </div>
         </section>
     </main>
