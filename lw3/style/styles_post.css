@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    height: 74px;
+    margin: 0;
+}
+
+.nav-box {
+    display: flex;
+    width: 940px;
+    height: 100%;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+
+}
+
+.link-text {
+    font: normal 400 12px/20px Oxygen, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+header .link-text {
+    color: #2E2E2E;
+}
+
+.title-box  {
+    margin-top: 82px;
+}
+
+.title-text {
+    color: #2E2E2E;
+    text-align: center;
+    font: normal 500 50px/51px Lora, sans;
+    margin: 0;   
+}
+
+.subtitle-text {
+    color: #2E2E2EA1;
+    text-align: center;
+    font: normal 400 17px/20px Oxygen, sans-serif;
+    margin-top: 20px;
+}
+
+.img {
+    width: 100%;
+    height: 534px;
+    background-image: url("/static/images/mountains.jpg");
+    background-size: 100%;
+    background-position-y: center; 
+    margin-top: 113px; 
+}
+
+.text-box {
+    margin: 140px auto 135px;
+    width: 960px;
+}
+
+.text {
+    color: #101315;
+    font: normal 400 24px/35px Oxygen, sans-serif;
+    margin: 35px 0;
+}
+
+footer {
+    margin-top: 135px;
+    height: 89px;
+    background-image: linear-gradient(#232F3899, #232F3899), url("/static/images/footer.jpg");
+    background-size: 100%;
+    background-position-y: center;  
+}
+
+footer .link-text {
+    color: #FFFFFF99;
+}
+
+.bio-title {
+    margin: 113px auto 0px;
+    
+}
+
+.bio-title__text {
+    color: #2E2E2E;
+    text-align: center;
+    font: normal 500 40px/51px Lora, sans;  
+    clear: left;   
+}
+
+.bio-info {
+    margin: 50px 240px;
+    width: 875px;
+    height: 354px;
+}
+
+.bio-info__img {
+    float: left;
+    margin-right: 50px;
+
+}
+
+.bio-info__text {
+    display: inline;
+    color: #101315;
+    font: normal 400 24px/35px Oxygen, sans-serif;
+}
+
+.bio-info__list {
+    margin-left: 510px;
+}
+
+
+
+
