@@ -146,7 +146,7 @@ $recent_posts = [
             <div class="recent-posts">
                 <?php
                 foreach ($recent_posts as $post) {
-                    include 'recent-post_preview.php';
+                    include 'recent_post_preview.php';
                 }
                 ?>
             </div>

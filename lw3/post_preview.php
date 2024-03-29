@@ -2,7 +2,7 @@
      <?php if (array_key_exists('tag', $post)): ?>
         <span class="featured-post__tag">ADVENTURE</span>   
     <?php endif; ?>
-    <h4 class="featured-post__title"><?= $post['title']?></h4>
+    <h3 class="featured-post__title"><?= $post['title']?></h3>
     <h5 class="featured-post__subtitle"><?= $post['subtitle']?></h5>
     <div class="featured-post__info">
         <div class="featured-post__speaker">
